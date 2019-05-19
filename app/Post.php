@@ -3,10 +3,9 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use BrianFaust\Commentable\HasCommentsTrait;
-use BrianFaust\Commentable\Interfaces\HasComments;
+use BrianFaust\Commentable\HasComments;
 
-class Post extends Model implements HasComments
+class Post extends Model
 {
-  use HasCommentsTrait;
+    use HasComments;
 }
